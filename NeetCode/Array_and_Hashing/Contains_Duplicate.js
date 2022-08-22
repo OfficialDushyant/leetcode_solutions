@@ -91,11 +91,10 @@ console.log(`[1,2,3,1]: ${containsDuplicate_2(nums2)}`);
  * 
  * Time Optimized approach.
  * time complexity O(n)
- * space complexity O(n)
+ * space complexity O(1)
  */
  var containsDuplicate = function(nums) {
-    const memo = new Set(nums); 
-    return memo.size !== nums.length
+    return new Set(nums).size !== nums.length
 };
 
 console.log('Match set size and array length approach.');
