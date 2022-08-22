@@ -92,6 +92,9 @@ console.log(`[1,2,3,1]: ${containsDuplicate_2(nums2)}`);
  * Time Optimized approach.
  * time complexity O(n)
  * space complexity O(1)
+ * 
+ * Runtime: 134 ms, faster than 55.11% of JavaScript online submissions for Contains Duplicate.
+ * Memory Usage: 51.7 MB, less than 18.57% of JavaScript online submissions for Contains Duplicate.
  */
  var containsDuplicate = function(nums) {
     return new Set(nums).size !== nums.length
