@@ -79,3 +79,26 @@ console.log('Optimized approach.');
 console.log(`[1,1,1,3,3,4,3,2,4,2]: ${containsDuplicate_2(nums)}`);
 console.log(`[1,2,3,4]: ${containsDuplicate_2(nums1)}`);
 console.log(`[1,2,3,1]: ${containsDuplicate_2(nums2)}`);
+
+/** 
+ * [Key Option]  if you save value in set it will not save duplicate values.
+ * so, the size of array and set wont be same if there is any duplicate value.
+ */ 
+
+/**
+ * @param {number[]} nums
+ * @return {boolean}
+ * 
+ * Time Optimized approach.
+ * time complexity O(n)
+ * space complexity O(n)
+ */
+ var containsDuplicate = function(nums) {
+    const memo = new Set(nums); 
+    return memo.size !== nums.length
+};
+
+console.log('Match set size and array length approach.');
+console.log(`[1,1,1,3,3,4,3,2,4,2]: ${containsDuplicate(nums)}`);
+console.log(`[1,2,3,4]: ${containsDuplicate(nums1)}`);
+console.log(`[1,2,3,1]: ${containsDuplicate(nums2)}`);
