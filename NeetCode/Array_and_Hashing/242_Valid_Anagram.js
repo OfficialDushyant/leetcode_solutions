@@ -85,8 +85,8 @@ console.log(isAnagram2("ab", "a"));
  * Sorting adds more time complexity
  * 
  * complexity
- * Time  O()
- * Space O()
+ * Time  O(n log n)
+ * Space O(1)
  * 
  * Runtime: 158 ms, faster than 21.14% of JavaScript online submissions for Valid Anagram.
  * Memory Usage: 48 MB, less than 27.10% of JavaScript online submissions for Valid Anagram.
