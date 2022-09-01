@@ -1,6 +1,12 @@
 /**
  * @param {string[]} strs
  * @return {string[][]}
+ * 
+ * Complexity
+ * Time: O(N * N)
+ * 
+ * Runtime: 182 ms, faster than 68.49% of JavaScript online submissions for Group Anagrams.
+ * Memory Usage: 52.5 MB, less than 84.77% of JavaScript online submissions for Group Anagrams.
  */
 var groupAnagrams = function (strs) {
     const result = [];
@@ -8,7 +14,7 @@ var groupAnagrams = function (strs) {
     for(let i =0; i < strs.length; i++){
         const sorted = [...strs[i]].sort().join('');
         if(map.has(sorted)) {
-            const mapValue = map.get(sorted).push(strs[i])
+            map.get(sorted).push(strs[i])
         }
         else {
             map.set(sorted, [strs[i]])
