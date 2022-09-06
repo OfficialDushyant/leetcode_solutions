@@ -40,7 +40,7 @@ console.log('\nSolving with two pointer');
  var isPalindrome = function(s) {
     if (!s.length) return true;
     s = s.replace(/[^a-zA-Z0-9]+/g, '').toLowerCase() // Remove char except alpha numeric
-    let [left, right] = [0, s.length - 1];
+    let left = 0 , right = s.length - 1
     while (left < right) {
         if(s[left] === s[right]){
             left++; 
