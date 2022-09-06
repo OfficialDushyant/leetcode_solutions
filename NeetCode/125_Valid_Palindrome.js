@@ -1,4 +1,3 @@
-console.log('\nSimple JS Solution');
 /**
  * @param {string} s
  * @return {boolean}
@@ -17,12 +16,11 @@ console.log('\nSimple JS Solution');
     return s === s.split("").reverse().join("");
 };
 
-
+console.log('\nSimple JS Solution');
 console.log(isPalindrome('A man, a plan, a canal: Panama'));
 console.log(isPalindrome('0P'));
 
 
-console.log('\nSolving with two pointer');
 /**
  * @param {string} s
  * @return {boolean}
@@ -53,5 +51,6 @@ console.log('\nSolving with two pointer');
     return true;
 };
 
+console.log('\nSolving with two pointer');
 console.log(isPalindrome('A man, a plan, a canal: Panama'));
 console.log(isPalindrome('0P'));
